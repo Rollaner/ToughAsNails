@@ -23,6 +23,7 @@ public class GameplayConfigurationHandler {
 	public static final String SURVIVAL_SETTINGS = "Survival Settings";
 	public static final String DRINKS = "Drink Configuration";
 	public static final String TEMPERATURE_TWEAKS = "Temperature Tweaks";
+	public static final String ARMOR_TEMPERATURE_TWEAKS = "Armor Temperature Tweaks";
 	public static final String CROP_TWEAKS = "Crop Tweaks";
 
 	public static Configuration config;
@@ -220,6 +221,26 @@ public class GameplayConfigurationHandler {
 					"Set how the temperature is modified in the MID_SUMMER season.");
 			addSyncedInt(GameplayOption.LATE_SUMMER_MODIFIER, 4, TEMPERATURE_TWEAKS,
 					"Set how the temperature is modified in the LATE_SUMMER season.");
+
+			// Armor temperature modifiers
+			addSyncedInt(GameplayOption.ARMOR_RATE_MODIFIER, 25, ARMOR_TEMPERATURE_TWEAKS,
+					"Set how armor decreases how long it takes to change temperature.");
+			addSyncedInt(GameplayOption.JELLED_SLIME_HELMET_MODIFIER, -1, ARMOR_TEMPERATURE_TWEAKS,
+					"Set how much the jellied slime helmet increases temperature.");
+			addSyncedInt(GameplayOption.JELLED_SLIME_CHESTPLATE_MODIFIER, -1, ARMOR_TEMPERATURE_TWEAKS,
+					"Set how much the jellied slime chestplate increases temperature.");
+			addSyncedInt(GameplayOption.JELLED_SLIME_LEGGINGS_MODIFIER, -1, ARMOR_TEMPERATURE_TWEAKS,
+					"Set how much the jellied slime leggings increase temperature.");
+			addSyncedInt(GameplayOption.JELLED_SLIME_BOOTS_MODIFIER, -1, ARMOR_TEMPERATURE_TWEAKS,
+					"Set how much the jellied slime boots increase temperature.");
+			addSyncedInt(GameplayOption.WOOL_HELMET_MODIFIER, 1, ARMOR_TEMPERATURE_TWEAKS,
+					"Set how much the wool helmet increases temperature.");
+			addSyncedInt(GameplayOption.WOOL_CHESTPLATE_MODIFIER, 1, ARMOR_TEMPERATURE_TWEAKS,
+					"Set how much the wool chestplate increases temperature.");
+			addSyncedInt(GameplayOption.WOOL_LEGGINGS_MODIFIER, 1, ARMOR_TEMPERATURE_TWEAKS,
+					"Set how much the wool leggings increase temperature.");
+			addSyncedInt(GameplayOption.WOOL_BOOTS_MODIFIER, 1, ARMOR_TEMPERATURE_TWEAKS,
+					"Set how much the wool boots increase temperature.");
 
 			// Crop tweaks
 			addSyncedBool(GameplayOption.TEMPERATURE_WITHERING, false, CROP_TWEAKS,

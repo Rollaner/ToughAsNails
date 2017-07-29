@@ -12,17 +12,22 @@ public enum GameplayOption implements ISyncedOption {
 	ENABLE_THIRST("Enable Thirst"), //
 	ENABLE_TEMPERATURE("Enable Body Temperature"), //
 	ENABLE_SEASONS("Enable Seasons"), //
+
 	DRINKS("Drinks"), //
+
 	OVERRIDE_THERMOMETER_LIMITS("Override Thermometer Limits"), //
 	THERMOMETER_LOWER_BOUND("Thermometer Lower Bound"), //
 	THERMOMETER_UPPER_BOUND("Thermometer Upper Bound"), //
+
 	RAIN_CHILL("Enable Rain Chill on World Blocks"), //
 	BIOME_TEMP_MODIFIER("Biome Temperature Modification Scaling"), //
 	ALTITUDE_TEMP_MODIFIER("Altitude Temperature Modification Scaling"), //
 	WET_TEMP_MODIFIER("Temperature Modifier for being Wet"), //
 	SNOW_TEMP_MODIFIER("Temperature Modifier for Snow"), //
+
 	TIME_TEMP_MODIFIER("Time of Day Temperature Modification Scaling"), //
 	TIME_EXTREMITY_MODIFIER("Temperature Scaling for Time of Day Extremities"), //
+
 	EARLY_AUTUMN_MODIFIER("Temperature Modifier for the EARLY_AUTUMN Season"), //
 	MID_AUTUMN_MODIFIER("Temperature Modifier for the MID_AUTUMN Season"), //
 	LATE_AUTUMN_MODIFIER("Temperature Modifier for the LATE_AUTUMN Season"), //
@@ -35,6 +40,17 @@ public enum GameplayOption implements ISyncedOption {
 	EARLY_SUMMER_MODIFIER("Temperature Modifier for the EARLY_SUMMER Season"), //
 	MID_SUMMER_MODIFIER("Temperature Modifier for the MID_SUMMER Season"), //
 	LATE_SUMMER_MODIFIER("Temperature Modifier for the LATE_SUMMER Season"), //
+
+	ARMOR_RATE_MODIFIER("Temperature Modifier for how wearing armor decreases the temperature change rate"), //
+	JELLED_SLIME_HELMET_MODIFIER("Temperature Modifier for wearing a Jellied Slime Helmet"), //
+	JELLED_SLIME_CHESTPLATE_MODIFIER("Temperature Modifier for wearing a Jellied Slime Chestplate"), //
+	JELLED_SLIME_LEGGINGS_MODIFIER("Temperature Modifier for wearing Jellied Slime Leggings"), //
+	JELLED_SLIME_BOOTS_MODIFIER("Temperature Modifier for wearing Jellied Slime Boots"), //
+	WOOL_HELMET_MODIFIER("Temperature Modifier for wearing a Wool Helmet"), //
+	WOOL_CHESTPLATE_MODIFIER("Temperature Modifier for wearing a Wool Chestplate"), //
+	WOOL_LEGGINGS_MODIFIER("Temperature Modifier for wearing Wool Leggings"), //
+	WOOL_BOOTS_MODIFIER("Temperature Modifier for wearing Wool Boots"), //
+
 	TEMPERATURE_WITHERING("Crops Wither by Temperature"), //
 	HIBERNATING("Crops which Hibernate and don't Decay"), //
 	CROPS("Crops");
